@@ -1,0 +1,42 @@
+image: registry.gem.lan/python:3.9
+
+variables:
+  GEM_DOCKER_REGISTRY: "registry.gem.lan/"
+  GIT_STRATEGY: none
+
+before_script:
+  - |
+    # Install OpenQuake
+    curl -O https://raw.githubusercontent.com/gem/oq-engine/master/install.py
+    python3 install.py user
+    source ~/openquake/bin/activate 
+    
+  - |
+    # append gitlab internal IP to hosts files
+    echo "172.16.12.228   gitlab.openquake.org" | /usr/bin/tee --append /etc/hosts
+    apt update
+    apt -y full-upgrade 
+    python -V  # Print out python version for debugging
+    pip install -U pytest
+    GEM_BRANCH=$CI_COMMIT_REF_NAME
+    if [ "$CI_COMMIT_REF_NAME" == "" ] && [ "$CI_MERGE_REQUEST_TARGET_BRANCH_NAME" != "" ]
+    then
+        GEM_BRANCH="$CI_MERGE_REQUEST_TARGET_BRANCH_NAME"
+    fi
+    if [ "$GEM_BRANCH" == "" ]
+    then
+        echo "We don't know which branch to checkout - Help!"
+    fi
+    echo $GEM_BRANCH
+    git clone -b $GEM_BRANCH --recurse-submodules https://$username:$token@gitlab.openquake.org/risk/ecd.git
+
+ecd_test:
+  tags:
+    - risk-exposure
+  #only:
+  #  - merge_requests
+
+  script:
+    - |
+      cd ./ecd
+      pytest tests
