@@ -1,36 +1,39 @@
 # 🌎  PUEBLA EARTHQUAKE Mw7.1, 2017-09-19 
 
 
-# 📂 The repository  
+This folder includes detailed information about the Puebla earthquake Mw7.1 in Mexico 2017-09-19.
 
-In the repository you can find detailed information about the Puebla earthquake Mw7.1 in Mexico 2017-09-19.
+Available information: <br />
 
-Available information in the folders: <br />
+## Impact
 
-**Impact**<br />
 Detailed information at different geographical detail on the impact in population and infrastructure.
 - Building damage
 - Human impact 
 - Economic losses
 
-**OpenQuake_gmfs** <br />
-Input file to generate the ground motion fields considering the recording stations for the event.
-This folder includes the rupture file and the configuration file (`job.in`)
-<img src="./OpenQuake_gmfs/gmf_median_no_stations.png" alt="gmf_median_no_stations" width="400">
+## OpenQuake_gmfs
 
-**Recording_Stations**<br />
-Collection of available recording stations recorded during the event
-<img src="./Recording_Stations/recording_stations.png" alt="recording_stations" width="400">
+Input files to generate the ground motion fields considering the recording stations for the event.
+This folder includes the rupture file and the configuration file (`job.in`).
 
-**Rupture** <br />
-Listing of possible rupture solutions for the event
+<img src="./OpenQuake_gmfs/gmf_median_no_stations.png" alt="gmf_median_no_stations" width="500">
+
+## Recording_Stations
+
+Collection of available recording stations recorded during the event.
+
+<img src="./Recording_Stations/recording_stations.png" alt="recording_stations" width="500">
+
+## Rupture 
+Listing of possible rupture solutions for the event.
+
 <img src="./Rupture/earthquake_ruptures.png" alt="earthquake_rupturess" width="400">
 
 
 # ☄️ The earthquake at a glance 
 
-
-Summary of the [main consequences](https://gitlab.openquake.org/risk/ecd/-/blob/main/Mexico/20170919_M7.1_Puebla/earthquake_information.csv) experienced after the event:
+Summary of the [main consequences](./earthquake_information.csv) experienced after the event:
 
 | FIELD                 | DESCRIPTION          |
 |-----------------------|----------------------|
