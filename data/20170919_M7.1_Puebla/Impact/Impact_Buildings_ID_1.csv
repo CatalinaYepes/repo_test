@@ -1,0 +1,32 @@
+﻿ID_1,NAME_1,TAXONOMY,GEM_TAXONOMY,BUILDINGS_DAMAGED,BUILDINGS_COLLAPSED,DS2_MODARATE_DAMAGED,DS3_EXTENSIVE_DAMAGED,DS4_COMPLETE_DAMAGE,BUILDINGS_COLLAPSED,CAUSE_OF_DAMAGE,REFERENCE
+9,Ciudad de México,URM-LR,"MUR+CB99/HBET:1,2/RES+RES1",148,0,35,72,41,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,URM-CVF,"M99+ADO/HBET:1,4/YAPP:1940/FW",234,7,87,103,37,7,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,URM-RCS,"MUR+CB99/HBET:1,5/RES",780,8,282,348,142,8,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,CFM-RCS,"MCF/HBET:3,6/RES+RES2",149,0,83,53,13,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCF-MW-RCS,"CR/HBET:3,8",161,0,88,59,14,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,CC-FS,"CR/LFLS/HBET:4,14",550,29,266,181,74,29,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCF-RCS,"CR/HBET:2,11",361,8,185,120,48,8,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCF-FS,"CR/LFLS/HBET:5,12",20,2,6,0,12,2,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCF-B&B,"CR/LFM/HBET:2,10/FC+FC3",30,0,7,21,2,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCF-FPS,"CR/HBET:5,14",24,0,10,6,8,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCFW-RCS,"CR/LDUAL/HBET:3,15",28,0,12,9,7,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,RCFW-FS,"CR/LWAL/HBET:5,14/EWC",6,0,0,6,0,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,CC-STRUSS,"CR/HBET:1,2/EWMA/RME+RME1",41,0,20,10,11,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,SF-SD,"S/LFM/HBET:1,21/RME+RME3",35,0,19,7,9,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,SC-FS,"S/LFLS/HBET:1,13",18,0,15,3,0,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,SRCF-SD,"SRC/HBET:1,13/RC+RC2",9,0,6,2,1,0,Ground shaking,Tena_Colunga_et_al_2020_b
+9,Ciudad de México,SF-SD-RCF,,3,1,2,0,0,1,Ground shaking,Tena_Colunga_et_al_2020_b
+15,México,,,382,57,252,73,,57,Ground shaking,Singh_et_al_2018
+15,México,RC_Frames,CR/LFM,116,,,,,,Ground shaking,Jara_et_al_2019
+15,México,Flat_Slab,CR/LFLSINF,85,,,,,,Ground shaking,Jara_et_al_2019
+15,México,Masonry,M99,73,,,,,,Ground shaking,Jara_et_al_2019
+15,México,Steel_Frames,S/LFM,4,,,,,,Ground shaking,Jara_et_al_2019
+15,México,Other,MATO,6,,,,,,Ground shaking,Jara_et_al_2019
+16,Puebla,,,23680,5744,,,,,Ground shaking,EID
+9,Ciudad de México,,,12942,6576,,,,,Ground shaking,EID
+15,México,,,2468,3242,,,,,Ground shaking,EID
+17,Morelos,,,12876,1838,,,,,Ground shaking,EID
+12,Guerrero,,,1169,1597,,,,,Ground shaking,EID
+29,Tlaxcala,,,34,,,,,,Ground shaking,EID
+9,Ciudad de México,,,1626,46,809,563,208,46,Ground shaking,Tena_Colunga_et_al_2020_a
+9,Ciudad de México,,,,44,,,,44,Ground shaking,Galvis_et_al_2022

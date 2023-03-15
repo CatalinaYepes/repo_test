@@ -1,0 +1,23 @@
+usuario@CYE.local running /Users/cye/Documents/wip/ecd/Mexico/20170919_M7.1_Puebla/OpenQuake_gmfs/Sensitivity/job_rup-Melgar_et_al_2018_gmpe-USGS_seismic.ini [--hc=None]
+Using engine version 3.16.0-gite16d553af6
+Using 8 cores on CYE.local
+Running EventBasedCalculator with concurrent_tasks = 16
+Checksum of the inputs: 989790411 (total size 657.28 KB)
+Extracting the hazard sites from the site model
+Read N=11957 hazard sites and L=1 hazard levels
+Reading station data from /Users/cye/Documents/wip/ecd/Mexico/20170919_M7.1_Puebla/OpenQuake_gmfs/stationlist_seismic.csv
+min_iml=[1.e-10]
+There are 4 realization(s)
+Reordering the ruptures and storing the events
+Reading 1 ruptures
+GMM: AbrahamsonEtAl2015SSlab, IMT: PGA, Nominal bias (mean): -0.316
+GMM: AtkinsonBoore2003SSlabCascadia, IMT: PGA, Nominal bias (mean): 0.678
+GMM: AtkinsonBoore2003SSlab, IMT: PGA, Nominal bias (mean): 0.231
+GMM: ZhaoEtAl2016SSlab, IMT: PGA, Nominal bias (mean): -0.715
+event_based 100% [1 submitted, 0 queued]
+Received {'gmfdata': '1.1 MB', 'sig_eps': '365 B', 'times': '309 B', 'hcurves': '5 B'} in 695 seconds from event_based
+Stored 560.63 KB of GMFs
+Checking stored GMFs
+Your results are expected to have a large dependency from the rupture seed: 26%
+Exposing the outputs to the database
+Stored 1.75 MB on /Users/cye/oqdata/calc_42.hdf5 in 699 seconds

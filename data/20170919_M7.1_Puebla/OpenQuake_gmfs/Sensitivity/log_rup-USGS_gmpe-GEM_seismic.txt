@@ -1,0 +1,23 @@
+usuario@CYE.local running /Users/cye/Documents/wip/ecd/Mexico/20170919_M7.1_Puebla/OpenQuake_gmfs/Sensitivity/job_rup-USGS_gmpe-GEM_seismic.ini [--hc=None]
+Using engine version 3.16.0-gite16d553af6
+Using 8 cores on CYE.local
+Running EventBasedCalculator with concurrent_tasks = 16
+Checksum of the inputs: 552628578 (total size 657.81 KB)
+Extracting the hazard sites from the site model
+Read N=11957 hazard sites and L=1 hazard levels
+Reading station data from /Users/cye/Documents/wip/ecd/Mexico/20170919_M7.1_Puebla/OpenQuake_gmfs/stationlist_seismic.csv
+min_iml=[1.e-10]
+corner points do not lie on the same plane
+There are 3 realization(s)
+Reordering the ruptures and storing the events
+Reading 1 ruptures
+GMM: AbrahamsonEtAl2015SSlab, IMT: PGA, Nominal bias (mean): -0.186
+GMM: Kanno2006Deep, IMT: PGA, Nominal bias (mean): 0.883
+GMM: YoungsEtAl1997SSlab, IMT: PGA, Nominal bias (mean): -0.379
+event_based 100% [1 submitted, 0 queued]
+Received {'gmfdata': '841.62 KB', 'sig_eps': '351 B', 'times': '309 B', 'hcurves': '5 B'} in 518 seconds from event_based
+Stored 420.47 KB of GMFs
+Checking stored GMFs
+Your results are expected to have a large dependency from the rupture seed: 34%
+Exposing the outputs to the database
+Stored 1.69 MB on /Users/cye/oqdata/calc_37.hdf5 in 521 seconds
