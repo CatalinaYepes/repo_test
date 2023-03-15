@@ -1,14 +1,30 @@
+# EARTHQUAKE CONSEQUENCE DATABASE
+
 <div align='center'>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Global_Earthquake_Model_Logo.png/440px-Global_Earthquake_Model_Logo.png" alt="GEM Foundation" width="400"/>
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Global_Earthquake_Model_Logo.png/440px-Global_Earthquake_Model_Logo.png" alt="GEM Foundation" width="300"/>
+</p>
 
-<!-- ![GEM Foundation](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Global_Earthquake_Model_Logo.png/440px-Global_Earthquake_Model_Logo.png) -->
+<a href='./data/'>
+<img src='https://img.shields.io/badge/Earthquake_Scenarios-green?style=for-the-badge'>
+</a>
+
+<a href='https://docs.openquake.org/vulnerability/'>
+<img src='https://img.shields.io/badge/Global_Database-gray?style=for-the-badge'>
+</a>
+
+<a href='https://www.globalquakemodel.org/gem-maps/global-earthquake-risk-map'>
+<img src='https://img.shields.io/badge/GEM_Risk_Models-orange?style=for-the-badge'>
+</a>
+
+<a href='LICENSE.txt'>
+<img src='https://img.shields.io/badge/LICENSE-blue?style=for-the-badge'>
+</a>
 
 </div>
 
 ---
-
-# 🌟 EARTHQUAKE CONSEQUENCE DATABASE
 
 This repository is a collection of earthquake footprints and consequences from past event.
 
@@ -34,7 +50,7 @@ Currently you can find in the database the following events:
 | 20070815_M7.9_Pisco       |   2007 | Peru             | Pisco_2007        |   7.9  |        40    |
 | 20041115_M7.2_Pizarro     |   2004 | Colombia         | Pizarro_2004      |   7.2  |        15    |
 | 20040224_M6.3_AlHoceima   |   2004 | Morocco          | AlHoceima_2004    |   6.3  |        12.2  |
-| 20030521_M6.8_Boumerdes   |   2003 | Algeria          | nan               |   6.8  |        12    |
+| 20030521_M6.8_Boumerdes   |   2003 | Algeria, Spain   | nan               |   6.8  |        12    |
 | 20010113_M7.6_SanMiguel   |   2001 | El Salvador      | San Miguel_2001   |   7.6  |        39    |
 | 20010213_M6.6_SanSalvador |   2001 | El Salvador      | San Salvador_2001 |   6.6  |        13    |
 | 19990125_M6.1_Armenia     |   1999 | Colombia         | Armenia_1999      |   6.1  |        15    |
@@ -42,7 +58,7 @@ Currently you can find in the database the following events:
 | 19940606_M6.8_Cauca       |   1994 | Colombia         | Cacua_1994        |   6.8  |        10    |
 | 19921012_M5.9_Cairo       |   1992 | Egypt            | nan               |   5.8  |        21.5  |
 | 19850919_M8.1_Michoacan   |   1985 | Mexico           | Mexico_Michoacan  |   8.1  |       nan    |
-| 19830331_M5.6_Popayan     |   1983 | Colombia         | Popayán_1983      |   5.6  |        15    |
+| 19830331_M5.6_Popayan     |   1983 | Colombia, Ecuador| Popayán_1983      |   5.6  |        15    |
 | 19600522_M9.5_Valdivia    |   1960 | Chile            | Valdivia_1960     |   9.5  |        25    |
 | 20210907_M7.1_Guerrero    |    nan | nan              | nan               | nan    |       nan    |
 
