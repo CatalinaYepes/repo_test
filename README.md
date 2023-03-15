@@ -1,4 +1,4 @@
-# EARTHQUAKE CONSEQUENCE DATABASE
+# GEMSA - Global Earthquake Scenario Archive
 
 <div align='center'>
 
@@ -14,9 +14,11 @@
 <img src='https://img.shields.io/badge/Global_Database-gray?style=for-the-badge'>
 </a>
 
+<!-- ---
 <a href='https://www.globalquakemodel.org/gem-maps/global-earthquake-risk-map'>
 <img src='https://img.shields.io/badge/GEM_Risk_Models-orange?style=for-the-badge'>
 </a>
+--- -->
 
 <a href='LICENSE.txt'>
 <img src='https://img.shields.io/badge/LICENSE-blue?style=for-the-badge'>
@@ -24,41 +26,70 @@
 
 </div>
 
----
+
+# ✨ Overview
+
+> The v2023.0.0 release for the GEM's global earthquake scenario archive is available! 🥳 🚀
+
 
 This repository is a collection of earthquake footprints and consequences from past event.
 
 Currently you can find in the database the following events:
 
-<div align='center'>
-<img src="ECD_coverage.png" alt="GEM's ECD events" width="500"/>
+<div align='left'>
+<img src="./docs/ECD_coverage.png" alt="GEM's ECD events" width="700"/>
 </div>
 
-| Event_ID                  |   Year | Country          | Event_Name        |     Mw |   Depth_(km) |
-|:--------------------------|-------:|:-----------------|:------------------|-------:|-------------:|
-| 20200623_M7.4_Oaxaca      |   2020 | Mexico           | Oaxaca_2020       |   7.4  |       nan    |
-| 20170403_M6.5_Moijabana   |   2017 | Botswana         | nan               |   6.46 |        23.5  |
-| 20170908_M8.2_Chiapas     |   2017 | Mexico           | Chiapas_2017      |   8.2  |        45.9  |
-| 20171113_M6.5_Puntarenas  |   2017 | Costa Rica       | Puntarenas_2017   |   6.5  |        22    |
-| [20170919_M7.1_Puebla](./Mexico/20170919_M7.1_Puebla)      |   2017 | Mexico           | Puebla_2017       |   7.1  |        51.2  |
-| 20160416_M7.8_Pedernales  |   2016 | Ecuador          | Pedernales_2016   |   7.8  |        17    |
-| 20160910_M5.9_Bukoba      |   2016 | Tanzania, Uganda | nan               |   5.9  |        40    |
-| 20150916_M8.3_Illapel     |   2015 | Chile            | Illapel_2015      |   8.3  |        22.44 |
-| 20140401_M8.2_Iquique     |   2014 | Chile            | Iquique_2014      |   8.2  |        38.9  |
-| 20100227_M8.8_Maule       |   2010 | Chile            | Maule_2010        |   8.8  |        30    |
-| 20080524_M5.9_Quetame     |   2008 | Colombia         | Quetame_2008      |   5.9  |        10    |
-| 20070815_M7.9_Pisco       |   2007 | Peru             | Pisco_2007        |   7.9  |        40    |
-| 20041115_M7.2_Pizarro     |   2004 | Colombia         | Pizarro_2004      |   7.2  |        15    |
-| 20040224_M6.3_AlHoceima   |   2004 | Morocco          | AlHoceima_2004    |   6.3  |        12.2  |
-| 20030521_M6.8_Boumerdes   |   2003 | Algeria, Spain   | nan               |   6.8  |        12    |
-| 20010113_M7.6_SanMiguel   |   2001 | El Salvador      | San Miguel_2001   |   7.6  |        39    |
-| 20010213_M6.6_SanSalvador |   2001 | El Salvador      | San Salvador_2001 |   6.6  |        13    |
-| 19990125_M6.1_Armenia     |   1999 | Colombia         | Armenia_1999      |   6.1  |        15    |
-| 19990930_M7.4_Oaxaca      |   1999 | Mexico           | Oaxaca_1999       |   7.4  |       nan    |
-| 19940606_M6.8_Cauca       |   1994 | Colombia         | Cacua_1994        |   6.8  |        10    |
-| 19921012_M5.9_Cairo       |   1992 | Egypt            | nan               |   5.8  |        21.5  |
-| 19850919_M8.1_Michoacan   |   1985 | Mexico           | Mexico_Michoacan  |   8.1  |       nan    |
-| 19830331_M5.6_Popayan     |   1983 | Colombia, Ecuador| Popayán_1983      |   5.6  |        15    |
-| 19600522_M9.5_Valdivia    |   1960 | Chile            | Valdivia_1960     |   9.5  |        25    |
-| 20210907_M7.1_Guerrero    |    nan | nan              | nan               | nan    |       nan    |
+| DATE                    | AVAILABLE EVENTS	|
+|:------------------------|:------------------|
+| 2020 to present	        | [20230206_M7.8_CentralTurkey](./data/20230206_M7.8_CentralTurkey), [20210907_M7.1_Guerrero](./data/20210907_M7.1_Guerrero), 20200623_M7.4_Oaxaca, 20201030_M7_AegeanSea       |
+| 2015 to 2019		        | 20191126_M6.4_Albania, 20190618_M6.4_Yamagata, 20180618_M5.5_Osaka, 20180906_M6.6_HokkaidoEasternIburi, 20170403_M6.5_Moijabana, [20170919_M7.1_Puebla](./data/20170919_M7.1_Puebla), 20171113_M6.5_Puntarenas, 20170908_M8.2_Chiapas, 20170612_M6.3_AegeanSea, 20171112_M7.4_SarpoleZahab, 20160910_M5.9_Bukoba, 20160416_M7.8_Pedernales, 20162017_CentralItaly_sequence, 20160416_M7.0_Kumamoto, 20150423_M7.8_Gorkha, 20150916_M8.3_Illapel, 20151117_M6.5_Lefkada    |
+| 2010 to 2014		        | 20140401_M8.2_Iquique, 20140126_M6.1_Kefalonia, 20140203_M6_Kefalonia, 20120000_EmiliaRomagna_sequence, 20120811_M6.5_Ahar-Varzaghan, 20111023_M7.1_Van, 20100227_M8.8_Maule   |
+| 2005 to 2009		        | 20090000_Laquila_sequence, 20080524_M5.9_Quetame, 20080529_M6.32_Iceland, 20070815_M7.9_Pisco, 20050222_M6.5_Zarand     |
+| 2000 to 2004		        | 20040224_M6.3_AlHoceima, 20041115_M7.2_Pizarro, 20041124_M4.99_Gardone, 20030521_M6.8_Boumerdes, 20031226_M6.6_Bam, 20020000_Molise_sequence, 20010113_M7.6_SanMiguel, 20010213_M6.6_SanSalvador, 20000617_M5.87_Iceland, 20000620_M6.46_Iceland   |
+| 1995 to 1999		        | 19990125_M6.1_Armenia, 19990930_M7.4_Oaxaca, 19990907_M5.9_Athens, 19990817_M7.53_Izmit, 19991112_M6.71_Duzce, 19980627_M6.28_AdanaCeyhan, 19970000_UmbriaMarche_sequence, 19970228_M6.1_Golestan, 19970510_M7.2_Qayen, 19961009_M6.8_Cyprus       |
+| 1990 to 1995		        | 19950513_M6.5_KozaniGrevena, 19950615_M6.4_Aigio, 19951001_M6.42_Dinar, 19940606_M6.8_Cauca, 19921012_M5.9_Cairo, 19920313_M6.68_Erzincan, 19901213_M5.61_Augusta, 19900530_M6.95_Vrancea, 19900531_M6.31_Vrancea, 19900620_M7.4_Manjil-Rudbar   |
+| Before 1989   			    | 19881016_M5.88_Elia, 19860913_M6_Kalamata, 19850919_M8.1_Michoacan, 19830331_M5.6_Popayan, 19810224_M6.7_GulfofCorinth, 19810225_M6.4_GulfofCorinth, 19801123_M6.9_Irpinia, 19780916_M7.3_Tabas, 19600522_M9.5_Valdivia    |
 
+
+
+# 🚀 Model versions  
+
+Each version of the archive that is released can be accessed by changing from the `main` branch to the `tag` of a given version.
+The `main` branch could contain the work-in-progress of the next version of the model.
+
+| Version   | Release Notes                                                            |
+|-----------|--------------------------------------------------------------------------|
+| [v2023.0.0](https://github.com/gem/ecd/tree/v2023.0.0) | Original version with 100 earthquake scenario events.|
+
+
+# 🌟 Contributors 
+
+The authors are grateful for the input from dozens of collaborators. For each event, a list of contributors can be found in the main README page of the event.
+
+# License
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+
+# 🤔 Frequently asked questions 
+
+### Which version am I seeing? How to change the version?
+By default you will see the files in the repository in the  `main` branch. Each version of the model that is released can be accessed is marked with a `tag`. By changing the tag version at the top of the repository, you can change see the files for a given version.
+
+Note that the `main` branch could contain the work-in-progress of the next version of the model.
+
+### How do I download the data for a given version?
+For each version, a related zip file is available in the [release section](https://github.com/gem/global_exposure_model/releases).
+
+### Where can I find the models at the highest available resolution?
+
+Please contact us at product@globalquakemodel.org
