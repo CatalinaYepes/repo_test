@@ -32,13 +32,16 @@
 > The v2023.0.0 release for the GEM's global earthquake scenario archive is available! 🥳 🚀
 
 
-This repository is a collection of earthquake footprints and consequences from past event.
-
-Currently you can find in the database the following events:
+This repository is a collection of earthquake footprints and consequences from past events.
 
 <div align='left'>
-<img src="./docs/ECD_coverage.png" alt="GEM's ECD events" width="700"/>
+<img src="./global_database/ECD_coverage.png" alt="GEM's ECD events" width="700"/>
 </div>
+
+Find the global sumamry impact data in the [global_database folder](./global_database).
+
+Additional information is available for the follwoing events:
+
 
 | DATE                    | AVAILABLE EVENTS	|
 |:------------------------|:------------------|
