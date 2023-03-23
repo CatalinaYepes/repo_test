@@ -4,51 +4,34 @@ Check database in file [GEM_ECD.csv](./GEM_ECD.csv)
 
 ## ✨ Metadata
 
-`Year`: The year of phenomenon occurrence.    
+- `Year:`: Year of phenomenon occurrence.
 
-`Country`: The name of the country where EQ happened.
+- `Country:` Country where the epicenter of the event was located.
 
-`Region`:  The name of the region where EQ happened.  
+- `Region:` Name of the region where EQ happened.  
 
-`Event_Name`: The name of the event based on local sources.	 
+- `Event_Name:`  The name of the event based on local sources.
 
-`Local_Date`: Local date of occurrence (Based on local sources/or USGS). Format: (dd/mm/yyyy)
+- `Local_Date:` Date of occurrence at the location of the even. Format: dd/mm/yyyy.
 
-`Local_Time`: Local time of occurrence (Based on local sources/or USGS). Format: (HH/MM/SS)
+- `Local_Time:` Local time of occurrence (sources: USGS). Format: HH/MM/SS.
 
-`Latitude`: Latitude of the epicenter (Based on local sources/or USGS).
+- `Latitude:` Latitude of the epicenter (sources: USGS).
 
-`Longitude`: Longitude of the epicenter (Based on local sources/or USGS).
+- `Longitude:` Longitude of the epicenter (sources: USGS).
 
-`Depth_(km)`:  Hypocentral depth (Based on local sources/or USGS).
+- `Depth_(km):` Hypocentral depth (sources: USGS).
 
-`Mw`: Moment magnitude (Based on local sources/or USGS).
+- `Mw:` Moment magnitude (sources: USGS).
 
-`Max_Intensity_(MMI)`:  Modified Mercalli Intensity (MMI) according to USGS ShakeMaps.
+- `Max_Intensity_(MMI):` Modified Mercalli Intensity (MMI) (source: USGS).
 
-`Tectonic region type`:
+- `Tectonic region type:` Tectonic features associated to the event. For example, active shallow crust, subduction interface, subduction intraslab, stable continental.
 
-`Fault mechanisim`:
+- `Fault mechanisim:` Faulting motion that produced the earthquake: strike-slip fault, normal fault, thrust fault (reverse fault).
 
-`Fatalities`:
+- `USGS_ID:` Unique identifier in the USGS scenarios service.
 
-`Injured`:
 
-`Displaced`:
-
-`Affected_Population`:
-
-`Buildings_Affected`:
-
-`Buildings_Damaged`:
-
-`Buildings_Collapsed`:
-
-`Economic_Losses`:
-
-`Currency:`
-
-`Insured_Losses`:
-
-`Induced_Effects`:
-
+> **Note**
+> For the definition of the parameters for building and human impact data, check the `Impact` folder in each event.
