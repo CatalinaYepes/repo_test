@@ -6,19 +6,19 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Global_Earthquake_Model_Logo.png/440px-Global_Earthquake_Model_Logo.png" alt="GEM Foundation" width="300"/>
 </p>
 
-<a href='./data/'>
+<a href='./earthquake_scenarios/'>
 <img src='https://img.shields.io/badge/Earthquake_Scenarios-green?style=for-the-badge'>
 </a>
 
-<a href='https://docs.openquake.org/vulnerability/'>
+<a href='./global_database/'>
 <img src='https://img.shields.io/badge/Global_Database-gray?style=for-the-badge'>
 </a>
 
-<!-- ---
-<a href='https://www.globalquakemodel.org/gem-maps/global-earthquake-risk-map'>
-<img src='https://img.shields.io/badge/GEM_Risk_Models-orange?style=for-the-badge'>
+
+<a href='./contribute/'>
+<img src='https://img.shields.io/badge/Contribute-orange?style=for-the-badge'>
 </a>
---- -->
+
 
 <a href='LICENSE.txt'>
 <img src='https://img.shields.io/badge/LICENSE-blue?style=for-the-badge'>

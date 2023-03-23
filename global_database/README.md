@@ -1,10 +1,8 @@
 # GEMSA - Global Earthquake Scenario Archive
 
-<div align='left'>
-<img src="./global_database/ECD_coverage.png" alt="GEM's ECD events" width="700"/>
-</div>
+Check database in file [GEM_ECD.csv](./GEM_ECD.csv)
 
-# ✨ Metadata
+## ✨ Metadata
 
 `Year`: The year of phenomenon occurrence.    
 
