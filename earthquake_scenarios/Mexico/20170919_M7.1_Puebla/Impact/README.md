@@ -1,62 +1,85 @@
 # IMPACT DATA COLLECTION
 
+## Files description
+
 Information at different administrative regions has been collected:
-
 - **ID_0:** Refers to metrics reported at national level
-- **ID_1:** Refers to metrics reported at administrative level 1, States (Entidades Federativas)
-- **ID_2:** Refers to metrics reported at administrative level 2, Municipalities (Municipios)
+- **ID_1:** Refers to metrics reported at administrative level 1
+- **ID_2:** Refers to metrics reported at administrative level 2
+- **ID_3:** Refers to metrics reported at administrative level 3
+- `Note:` When available, building level information is included.
 
-When available, building level information is included.
 
-
-## Building Impact
-
+### Building impact files 
 Datasets with the physical damage substained by buildings due to the earthquake and its induced effects.
 
 - `Impact_All_ID_0.csv`: National level impact statistics from multiple sources (indicated in the REFERENCE column).
-- `Impact_Buildings_detailed.csv`: Unified database of building damage information from `Datos_Abiertos_Puebla.zip`, `sismosmexico_Puebla.zip` and `CICM-SMIE-2017.zip`.
-- `Buildings_ID_1.csv`: Unified damaged building databased from Tena_Colunga_et_al_2020_a, Tena_Colunga_et_al_2020_a, Jara_et_al_2019, Singh_et_al_2018, and EID.
+- `Impact_Buildings_ID_0.csv`: National level damaged buildings data based on damage levels and/or construction material from multiple sources (indicated in the REFERENCE column).
+- `Impact_Buildings_ID_1.csv`: Damaged building data at administrative level 1 from multiple sources (indicated in the REFERENCE column).
+- `Impact_Buildings_ID_2.csv`: Damaged building data at administrative level 2 from multiple sources (indicated in the REFERENCE column).
+- `Impact_Buildings_ID_3.csv`: Damaged building data at administrative level 3 from multiple sources (indicated in the REFERENCE column).
 
 
-## Human Impact
-- `Impact_Human_ID_1.csv`: Database of human impact information from [Wikipedia], EID, NOAA, and USGS.
-- `Impact_Human_ID_2.csv`: Database of human impact information from `Datos_Abiertos_Puebla.zip`.
+### Human impact files
+
+- `Impact_Human_ID_1.csv`: Data of human impact information at administrative level 1 from multiple sources (indicated in the REFERENCE column).
+- `Impact_Human_ID_2.csv`: Data of human impact information at administrative level 2 from multiple sources (indicated in the REFERENCE column).
+- `Impact_Human_ID_3.csv`: Data of human impact information at administrative level 3 from multiple sources (indicated in the REFERENCE column).
 
 
-## Economic Losses
-Few references indicate the economic losses related to the event, and most of them provide a total value for the overall losses.
 
+## Reported metrics description
 
-## Reported impact metrics
+- `Year:`: Year of phenomenon occurrence.
 
-- `AFFECTED_POPULATION`: Number of people reported as affected due to the earthquake occurance and its secondary effects. No differentiation regarding the level of affectance is included. The metric reports the population affected from immediate impacts, such as deaths, injuries, being homeless, being displaced, or being evacuated because of building damaged, as well as population affected by induced earthquake effects, such as landslides, tsunamis or burns from fires.
+- `Country:` Country where the epicenter of the event was located.
 
-- `BUILDINGS_AFFECTED`: ?XXXX? MAYBE TO DELETE XXXX???
+- `Region:` Name of the region where EQ happened.  
 
-- `BUILDINGS_COLLAPSED`: Number of buildings reported as collapsed or totally destroyed.
+- `Event_Name:`  The name of the event based on local sources.
 
-- `BUILDINGS_DAMAGED`: Number of buildings that reported any level of damage due to the earthquake and its secondary effects.
+- `Local_Date:` Date of occurrence at the location of the even. Format: dd/mm/yyyy.
 
-- `CAUSE_OF_INJURY/DEATH`:
+- `Local_Time:` Local time of occurrence (sources: USGS). Format: HH/MM/SS.
 
-- `COMMENTS`:
+- `Latitude:` Latitude of the epicenter (sources: USGS).
 
-- `DISPLACED_POPULATION`: Number of people who are reported as having been left homeless, evacuated, or sheltered due to the significant damage to their homes.
+- `Longitude:` Longitude of the epicenter (sources: USGS).
 
-- `ECONOMIC_LOSSES`: Economic losses reported after the earthquake (it might include or not inderect losses). Currency units based on the source of reference.
+- `Depth_(km):` Hypocentral depth (sources: USGS).
 
-- `FATALITIES`: Number of people who have died due to the earthquake (either directly or indirectly) and other phenomena such as tsunamis, landslides, etc.
+- `Mw:` Moment magnitude (sources: USGS).
 
-- `TAXONOMY` or `GEM_TAXONOMY`: String identifying the pyisical characteristics and useage of the buildings. See more details on GEM Taxonomy in [Silva et al. 2022](https://doi.org/10.1007/s13753-022-00400-x)
+- `Max_Intensity_(MMI):` Modified Mercalli Intensity (MMI) (source: USGS).
 
-- `INDUCED_EFFECTS`: Other phenomena that occurred as a result of earthquake, such as tsunamis, landslides, liquefaction, avalanche, floods, fire, eruptions, etc.
+- `USGS_ID:` Unique identifier  
 
-- `INJURIES`: Number of people physically injured due to the earthquake occurance (directly or indirectly). 
+- `Tectonic region type:` Tectonic features associated to the event. For example, active shallow crust, subduction interface, subduction intraslab, stable continental.
 
-- `INSURED_LOSSES`: Economic insured losses reported as a consequence of the earthquake 
+- `Fault mechanisim:` Faulting motion that produced the earthquake: strike-slip fault, normal fault, thrust fault (reverse fault).
 
-- `REFERENCE`:
+- `Fatalities:` Number of people that died due to the earthquake direct or indirect effects (such as ground shaking, tsunamis, landslides, etc.
+Fatalities = Direct deaths (shaking) + indirect deaths (due to tsunamis, landslide, heart attack,...) + Missing
 
-- `OCCUPANCY`:
+- `Injured:` Number of people physically injured due to the earthquake occurance (directly or indirectly). It considers all level of injuries.
+Injured = Direct injuries + indirect injuries
 
+- `Displaced_Population:` Number of people who are reported as having been displaced, relocated, or evacuated due to the significant damage to their homes. If there are some sources in which the number of Homeless and Sheltered have been presented separately, adding the extra columns with the related headers is recommended.
 
+- `Affected_Population:` Number of people reported as affected due to the earthquake occurance and its secondary effects. No differentiation regarding the level of affectance is included. The metric reports the population affected from immediate impacts, such as deaths, injuries, being homeless, being displaced, or being evacuated because of building damaged, as well as population affected by induced earthquake effects, such as landslides, tsunamis or burns from fires. 
+
+- `Buildings_Damaged:` Number of buildings that reported any level of damage due to the earthquake and its secondary effects (Slight, Moderate, Extensive, Partially collapsed, Near collapse, and so on). Moreover, the number of buildings was reported as affected. 
+
+- `Buildings_Collapsed:` Number of buildings reported as collapsed or totally destroyed.
+
+- `Occupancy:` Refers to the use, or intended use, of a building or portion of a building, for the shelter or support of persons or property. When more detailed data is provided, the occupancy for which it is applicable (Residential, Commercial, Industrial, Education, Health, Churches, Lifelines, etc.)
+
+- `GEM_Taxonomy:` String identifying the physical characteristics and usage of the buildings according to GEM building taxonomy. See more details on GEM Taxonomy in [Silva et al. 2022](https://link.springer.com/article/10.1007/s13753-022-00400-x).
+
+- `Economic_Losses` Economic losses reported after the earthquake (it might include or not indirect losses). Preferably based on a reliable estimate in USD; otherwise, currency units are based on the source of reference. The currency unit should be mentioned in an extra column. Add multiple rows for sources reporting multiple currencies.
+
+- `Insured_Losses:` Economic damages are covered by insurance companies. Preferably based on a reliable estimate in USD; otherwise, currency units are based on the source of reference. The currency unit should be mentioned in an extra column.
+
+- `Induced_Effects:` Other phenomena that occurred as a result of earthquake, such as tsunamis, landslides, liquefaction, avalanche, floods, fire, eruptions, etc.
+
+- `Reference:` Source of the reported information.
